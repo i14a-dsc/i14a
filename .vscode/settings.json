@@ -1,0 +1,6 @@
+{
+  "liveSassCompile.settings.watchOnLaunch": true,
+  "liveSassCompile.settings.generateMap": false,
+  "livePreview.serverRoot": "./src",
+  "liveSassCompile.settings.showOutputWindowOn": "Error"
+}
