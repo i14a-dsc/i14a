@@ -2,10 +2,6 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-mdui-button {
-  width: 100%;
-}
-
 mdui-icon {
   user-select: none;
   -webkit-user-select: none;
@@ -28,6 +24,27 @@ mdui-navigation-bar {
   margin: 0 auto;
 }
 
+#dialog {
+  width: 80%;
+  max-width: 720px;
+  margin: 0 auto;
+
+  mdui-button {
+    margin: 2px;
+  }
+
+  #dialog_close {
+    width: calc(100% - 4px);
+    margin-top: 10px;
+  }
+  .discord_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 #drawer {
   h1 {
     margin-top: 40px;
@@ -37,7 +54,7 @@ mdui-navigation-bar {
   mdui-button {
     vertical-align: text-bottom;
     margin-left: 30px;
-    width: 160px;
+    width: 60px;
   }
 }
 
