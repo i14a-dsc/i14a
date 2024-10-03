@@ -2,6 +2,11 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.mettazasi {
+  margin-left: 12px;
+  color: #777;
+}
+
 mdui-icon {
   user-select: none;
   -webkit-user-select: none;
