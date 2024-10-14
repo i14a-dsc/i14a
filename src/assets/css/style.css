@@ -2,6 +2,11 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.mdui-title {
+  color: initial !important;
+  text-decoration: none !important;
+}
+
 .mettazasi {
   margin-left: 12px;
   color: #777;
