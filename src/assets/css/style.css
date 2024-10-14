@@ -11,6 +11,11 @@ html {
   font-weight: bold !important;
 }
 
+.dialog-title {
+  text-align: center;
+  font-size: 24px;
+}
+
 p {
   text-align: center;
 }
