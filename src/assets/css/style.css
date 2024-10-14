@@ -7,6 +7,14 @@ html {
   color: #777;
 }
 
+.bold {
+  font-weight: bold !important;
+}
+
+p {
+  text-align: center;
+}
+
 mdui-icon {
   user-select: none;
   -webkit-user-select: none;
