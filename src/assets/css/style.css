@@ -35,10 +35,9 @@ mdui-layout-main {
   padding-top: 0px;
   position: relative;
   margin: 0 auto;
-  width: 90%;
   text-align: center;
-  min-width: 480px;
-  max-width: 720px;
+  max-width: 90%;
+  overflow-wrap: break-word;
 }
 
 mdui-navigation-bar {
@@ -49,7 +48,7 @@ mdui-navigation-bar {
 
 #dialog {
   width: 80%;
-  max-width: 720px;
+  max-width: 90%;
   margin: 0 auto;
 }
 #dialog mdui-button {
@@ -81,18 +80,14 @@ mdui-navigation-bar {
 }
 
 .main-container {
-  max-width: 720px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
 }
 
-.mdui-no-overwrap {
-  overflow: hidden;
-}
-
 @media screen and (max-width: 479px) {
-  body {
-    overflow: hidden;
+  mdui-dialog {
+    zoom: 0.8;
   }
   #screen_warning {
     visibility: visible !important;
@@ -109,6 +104,9 @@ mdui-navigation-bar {
     text-align: center;
     transform: translate(-50%, -50%);
   }
+  #mdui-button {
+    zoom: 0.8;
+  }
 }
 @media screen and (min-width: 479px) {
   #screen_warning {
@@ -118,5 +116,10 @@ mdui-navigation-bar {
     height: 0;
     margin: 0;
     padding: 0;
+  }
+}
+@media screen and (min-width: 720px) {
+  .main-container {
+    max-width: 720px;
   }
 }
