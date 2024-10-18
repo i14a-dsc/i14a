@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   console.log(`loaded in ${Date.now() - performance.timing.navigationStart}ms`);
+  const ignoreWarning = document.querySelector('#ignore_warning');
 
   const menu = document.querySelector('#menu');
   const dialog_open = document.querySelector('#dialog_open');
@@ -10,6 +11,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const force_dark = document.querySelector('#force_dark');
   const force_light = document.querySelector('#force_light');
   const force_system = document.querySelector('#force_system');
+
+  ignoreWarning.addEventListener('click', () => {
+    document.querySelector('#screen_warning').remove();
+  });
 
   force_newtab.addEventListener('click', () => {
     const allElements = document.querySelectorAll('*');
