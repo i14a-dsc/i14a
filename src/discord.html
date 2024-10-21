@@ -21,9 +21,7 @@
         const copy = document.querySelector('#dialog_copy');
 
         copy.addEventListener('click', () => {
-          navigator.clipboard.writeText(
-            'https://discord.com/oauth2/authorize?client_id=1268128123619250186'
-          );
+          navigator.clipboard.writeText('https://discord.com/invite/PTTGPsYwjX');
           copy.textContent = 'Copied!';
           copy.setAttribute('variant', 'tonal');
 
@@ -47,7 +45,7 @@
     <div id="screen_warning">
       <p>This website cannot be displayed in the current screen resolution.</p>
       <p>Please use a screen width of at least 480px.</p>
-      <p><a href="https://github.com/i14a-dsc/i14a/issues">Support</a></p>
+      <p><a href="https://discord.com/invite/PTTGPsYwjX">Support</a></p>
       <p><mdui-button id="ignore_warning">Ignore warning</mdui-button></p>
     </div>
     <mdui-dialog open="false" close-on-esc close-on-overlay-click id="dialog">
@@ -59,19 +57,13 @@
       <mdui-dialog-actions>
         <span class="discord_buttons">
           <mdui-button href="discord://-/invite/PTTGPsYwjX" target="_blank">App</mdui-button>
-          <mdui-button
-            href="https://discord.com/oauth2/authorize?client_id=1268128123619250186"
-            target="_blank"
+          <mdui-button href="https://discord.com/invite/PTTGPsYwjX" target="_blank"
             >Stable</mdui-button
           >
-          <mdui-button
-            href="https://ptb.discord.com/oauth2/authorize?client_id=1268128123619250186"
-            target="_blank"
+          <mdui-button href="https://ptb.discord.com/invite/PTTGPsYwjX" target="_blank"
             >PTB</mdui-button
           >
-          <mdui-button
-            href="https://canary.discord.com/oauth2/authorize?client_id=1268128123619250186"
-            target="_blank"
+          <mdui-button href="https://canary.discord.com/invite/PTTGPsYwjX" target="_blank"
             >Canary</mdui-button
           >
           <mdui-button id="dialog_copy" variant="filled">Copy Link</mdui-button>
@@ -103,14 +95,13 @@
     </mdui-navigation-drawer>
     <mdui-layout>
       <mdui-layout-main>
-        <h1>I14A-Bot</h1>
-        <h3>イアによって開発されているDiscordのアプリ。</h3>
+        <h1>I14A Support</h1>
+        <h3>イアが開発するDiscord アプリ(BOT) やその他のサイトに関するサポートサーバー</h3>
         <p>
-          イアが「あったらいいな」と思った機能を実装しています。<br />
-          例えば、osu!apiを使用してユーザーの統計を取得する機能を実装しています。
+          I14A
+          Supportでは他にもアップデート、新規アプリ、メンテナンスなどのお知らせを行ったりしています。
         </p>
-        <p>このアプリはユーザーインストールでもほとんどの機能を使用できます。</p>
-        <mdui-button id="dialog_open">Install app</mdui-button>
+        <mdui-button id="dialog_open">Join I14A Support</mdui-button>
       </mdui-layout-main>
     </mdui-layout>
   </body>
