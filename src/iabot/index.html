@@ -48,7 +48,7 @@
       <p>This website cannot be displayed in the current screen resolution.</p>
       <p>Please use a screen width of at least 480px.</p>
       <p><a href="https://discord.com/invite/PTTGPsYwjX">Support</a></p>
-      <p><mdui-button id="ignore_warning">Ignore warning</mdui-button></p>
+      <p><mdui-button id="ignore_warning" icon="close">Ignore warning</mdui-button></p>
     </div>
     <mdui-dialog open="false" close-on-esc close-on-overlay-click id="dialog">
       <mdui-dialog-title class="bold">Install application</mdui-dialog-title>
@@ -63,24 +63,27 @@
       </mdui-dialog-content>
       <mdui-dialog-actions>
         <span class="discord_buttons">
-          <mdui-button href="discord://-/users/1268128123619250186" target="_blank"
-            >App</mdui-button
+          <mdui-button
+            href="discord://-/oauth2/authorize?client_id=1268128123619250186"
+            target="_blank"
           >
+            App
+          </mdui-button>
           <mdui-button
             href="https://discord.com/oauth2/authorize?client_id=1268128123619250186"
             target="_blank"
-            >Stable</mdui-button
-          >
+            >Stable
+          </mdui-button>
           <mdui-button
             href="https://ptb.discord.com/oauth2/authorize?client_id=1268128123619250186"
             target="_blank"
-            >PTB</mdui-button
-          >
+            >PTB
+          </mdui-button>
           <mdui-button
             href="https://canary.discord.com/oauth2/authorize?client_id=1268128123619250186"
             target="_blank"
-            >Canary</mdui-button
-          >
+            >Canary
+          </mdui-button>
           <mdui-button id="dialog_copy" variant="filled">Copy Link</mdui-button>
         </span>
         <mdui-button id="dialog_close" variant="outlined">Close</mdui-button>
