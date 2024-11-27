@@ -2,11 +2,11 @@
 <html class="mdui-theme-auto" prefix="og: https://ogp.me/ns#" lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>Auto Google  Translate Bot - i14a.pages.dev</title>
+    <title>nl-ping - i14a.pages.dev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Auto Google Translate Bot" />
+    <meta property="og:title" content="nl-ping" />
     <meta property="og:site_name" content="i14a.pages.dev" />
-    <meta property="og:url" content="https://i14a.pages.dev/agtb" />
+    <meta property="og:url" content="https://i14a.pages.dev/nl-ping" />
     <meta property="og:image" content="https://i14a.pages.dev/assets/img/icon.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:site" content="@1u0704" />
@@ -37,7 +37,7 @@
     <style>
       .botPreview {
         width: calc(100% - 32px);
-        max-width: 645px !important;
+        max-width: 382px !important;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,8 +60,8 @@
       <mdui-dialog-title class="bold">Install application</mdui-dialog-title>
       <mdui-dialog-content>
         <p>
-          Auto Google Translate
-          Botをインストールするのに使用するDiscordインスタンスを選択してください。
+          NeverlandRPG Ping Bot
+          をインストールするのに使用するDiscordインスタンスを選択してください。
         </p>
         <p>
           本Botをユーザー/サーバーにインストールした時点で、<a href="/tos"
@@ -122,23 +122,23 @@
     </mdui-navigation-drawer>
     <mdui-layout>
       <mdui-layout-main>
-        <h1>Auto Google Translate Bot</h1>
-        <h3>英語と日本語を自動的に翻訳するBOT</h3>
+        <h1>NeverlandRPG Ping Bot Bot</h1>
+        <h3>NeverlandRPGの人数確認用Bot</h3>
         <p>
-          チャンネルトピックに「Translate」という文字列を挿入すると自動翻訳が開始されます。<br />
-          現在はリプライは通知無しで行うようになっています。
+          マイクラを起動する前に人数が確認出来たらいいなと思って作成しました。<br />
+          nl!stats もしくは /stats* で人数を確認出来ます。<br />
+          (*日本語に設定している場合、「ステータスを取得」になります。)
         </p>
-        <p>
-          If you insert the string "Translate" anywhere in the channel topic, automatic translation
-          will start.<br />
-          Currently, replies are sent without notification.
-        </p>
-        <img src="./assets/en.png" class="botPreview" /><br />
-        <img src="./assets/ja.png" class="botPreview" />
-        <p>対応インストールタイプ: サーバーインストール (BOT)</p>
+        <img src="./assets/image.png" class="botPreview" /><br />
+        <p>対応インストールタイプ: ユーザーインストール、サーバーインストール (BOT)</p>
         <mdui-button id="dialog_open" icon="download">Install app</mdui-button><br />
-        <mdui-button disabled variant="text" target="_blank" icon="code">
-          Closed source
+        <mdui-button
+          variant="text"
+          target="_blank"
+          icon="code"
+          href="https://github.com/i14a-dsc/nlping"
+        >
+          Source code
         </mdui-button>
       </mdui-layout-main>
     </mdui-layout>
